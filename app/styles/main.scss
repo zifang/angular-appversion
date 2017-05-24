@@ -1,0 +1,132 @@
+/**
+	 author create by fangdx
+ **/
+
+input,
+select{
+  height: 30px;
+  line-height: 30px;
+  width: 300px;
+}
+input[type='radio']{
+	width:inherit;
+	height: inherit;
+	vertical-align: middle;
+}
+.input-medium{
+  width: 300px;
+}
+.form-inline{
+	*zoom:1;
+	&:before,
+	&:after{
+	  display:table;
+	  line-height: 0;
+	  content: "";
+	}
+	&:after{
+	  clear: both;
+	}
+   margin-bottom: 12px;
+}
+.btn-blue{
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #06c;
+  color: #fff;
+  border-radius: 4px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+}
+.btn-large{
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.form-box{
+	form{
+		width: 500px;
+		margin: 50px auto 0;
+		padding: 20px;
+	}
+    .left{
+	    display: inline-block;
+	    width: 130px;
+    }
+	.mright10{
+	  margin-right: 30px;
+	}
+	.logo-box{
+		text-align: center;
+		margin-bottom: 30px;
+		.img-box{
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: middle;;
+		}
+		.text-box{
+			display: inline-block;
+			font-size: 18px;
+		}
+	}
+	.error-info{
+		margin-left: 130px;
+		color: #f00;
+	}
+	.input-small{
+		width: 70px;
+		line-height: inherit;
+	}
+	label{
+		margin-right: 10px;
+	}
+}
+.icon-detail{
+	display: inline-block;
+	position: fixed;
+	top: 8px;
+	right: 8px;
+	width:32px;
+	height: 32px;
+	background: url(../images/detail.png) no-repeat center center;
+}
+/*
+*detail page
+ */
+.detail-box{
+	padding: 20px 15px;
+	h3{
+		font-size: 16px;
+	}
+	.search-box{
+		margin-bottom: 10px;
+		margin-top: 20px;
+		.icon-search{
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				margin-left: 10px;
+				cursor: pointer;
+			img{
+				max-width: 100%;
+				vertical-align: middle;
+			}
+		}
+	}
+	.version-history{
+		ul{
+			li{
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.icon-close{
+		position: fixed;
+		top: -8px;
+		right: 8px;
+		font-size: 46px;
+	}
+}

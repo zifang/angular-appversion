@@ -1,0 +1,15 @@
+<div class="detail-box">
+	<a href="#/index?t={{t}}" class="icon-close">&times;</a>
+	<h3>&gt;版本更新操作记录</h3>
+	<div class="search-box">
+		<input type="text" ng-model="query" class="input-medium" placeholder="按关键字搜索">
+		<span class="icon-search" ng-click="queryData(query)"><img src="../images/search.png" alt=""></span>
+	</div>
+	<div class="version-history">
+		<ul>
+			<li ng-repeat="item in lists">
+				{{item.createTime}}  发布更新了{{item.os | switchOs}}{{item.appid | switchAppid}}，更新版本为{{item.updateVersion}}，更新类型为{{item.updateType | switchType}}，更新状态为{{item.activity | switchActivity}} 下载地址：{{item.url}} 更新内容为{{item.updateContent}}
+			</li>
+		</ul>
+	</div>
+</div>
